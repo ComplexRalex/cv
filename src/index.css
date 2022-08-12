@@ -16,9 +16,11 @@
     --secondary-text-color: #484848;
 
     --background-color: #FFFFFF;
+    --secondary-background-color: #F1F1F1;
     --outside-background-color: var(--primary-color);
-    --side-color: #F1F1F1;
-    --hr-color: #F1F1F1;
+    --side-color: var(--secondary-background-color);
+    --hr-color: var(--secondary-background-color);
+    --circle-color: var(--secondary-background-color);
 }
 
 body {
@@ -28,4 +30,10 @@ body {
 
 #root {
     background-color: var(--background-color);
+}
+
+@media print {
+    body {
+        background-color: var(--background-color);
+    }
 }

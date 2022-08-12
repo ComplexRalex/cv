@@ -15,7 +15,7 @@ export const Page = ({ title, children }) => {
                 </div>
                 {/* <BoldLine /> */}
             </div>
-            <BoldLine bottom />
+            <BoldLine />
         </>
     )
 }

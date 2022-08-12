@@ -1,0 +1,17 @@
+.circle {
+    position: relative;
+    bottom: -0.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--circle-color);
+    display: inline-block;
+}
+
+.circle.full {
+    background-color: var(--primary-color);
+}
+
+.circle + .circle {
+    margin-left: 0.3rem;
+}

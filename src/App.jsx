@@ -1,4 +1,4 @@
-import { Page, Main, Side, Content, EventInfo, LabeledInfo, Photo } from "./components";
+import { Page, Main, Side, Content, EventInfo, LabeledInfo, Photo, ListItem, List, Rating } from "./components";
 import picture from "./assets/img/pic.png";
 import "./components/styles"
 
@@ -15,7 +15,7 @@ function App() {
                     />
                     <LabeledInfo
                         label="Algo"
-                        info="Locochón"
+                        info="Colchón"
                     />
                 </Content>
             </Side>
@@ -30,12 +30,27 @@ function App() {
                     Velit reprehenderit est pariatur cillum occaecat.
                 </Content>
                 <Content title="Formación">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>58</li>
-                    </ul>
+                    <List>
+                        <ListItem>
+                            <span>Esterno</span>
+                            <Rating rate={7} />
+                        </ListItem>
+                        <ListItem>
+                            <span>Cleido</span>
+                            <Rating rate={5} />
+                        </ListItem>
+                        <ListItem>
+                            <span>Masto</span>
+                            <Rating rate={3} />
+                        </ListItem>
+                        <ListItem>
+                            <span>Ideo</span>
+                            <Rating rate={1} />
+                        </ListItem>
+                        <ListItem>
+                            <span>xD</span>
+                        </ListItem>
+                    </List>
                 </Content>
                 <Content title="Formación">
                     <EventInfo

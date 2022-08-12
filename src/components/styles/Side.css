@@ -4,3 +4,9 @@
     flex: 1;
     background-color: var(--side-color);
 }
+
+@media screen and (max-width: 6.5in) {
+    .side-container {
+        margin-bottom: 1.8rem;
+    }
+}

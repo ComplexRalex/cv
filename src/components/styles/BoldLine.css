@@ -4,7 +4,8 @@
     background-color: var(--primary-color);
 }
 
-/* .bold-line.bottom {
-    position: sticky;
-    bottom: 0;
-} */
+@media print {
+    .bold-line {
+        display: none;
+    }
+}

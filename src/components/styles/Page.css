@@ -31,5 +31,16 @@ header hr {
     display: -webkit-flex;
     display: flex;
     column-gap: 1.8em;
-    margin-block: 1rem;
+}
+
+@media screen and (max-width: 6.5in) {
+    header h1 {
+        text-align: center;
+    }
+
+    .page-container {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+    }   
 }

@@ -1,0 +1,12 @@
+.list-item {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.list-item span {
+    flex: 8;
+}
+
+/* .list-item .rating {
+    flex: auto;
+} */

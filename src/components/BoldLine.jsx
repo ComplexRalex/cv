@@ -1,3 +1,4 @@
+import "./styles"
 
 export const BoldLine = ({ bottom }) => {
     return (
