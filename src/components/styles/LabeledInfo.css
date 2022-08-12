@@ -1,3 +1,17 @@
+.labeled-container{
+    margin-block: 1rem;
+}
+
 .labeled-container .label, .labeled-container .info {
     display: block;
+}
+
+.labeled-container .label{
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.labeled-container .info{
+    font-weight: normal;
+    color: var(--primary-text-color);
 }

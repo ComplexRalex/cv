@@ -3,7 +3,7 @@ import "./styles"
 export const Content = ({ title, children }) => {
     return (
         <section className="content-container">
-            <h3>{ title }</h3>
+            <h2>{ title }</h2>
             <hr />
             { children }
         </section>

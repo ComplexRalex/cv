@@ -1,7 +1,22 @@
-.content-container h3 {
-    margin-block: 0.5rem;
+.content-container h2 {
+    margin-block: .5rem;
+    color: var(--primary-color);
+}
+
+.content-container hr {
+    border-color: var(--hr-color);
+    border-style: solid;
 }
 
 .content-container + .content-container {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
+}
+
+.side-container .content-container {
+    margin-inline: 1rem;
+}
+
+.side-container .content-container hr {
+    border-color: var(--primary-color);
+    border-style: solid;
 }

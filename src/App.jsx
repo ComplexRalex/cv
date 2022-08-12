@@ -1,19 +1,21 @@
-import { Content } from "./components/Content"
-import { EventInfo } from "./components/EventInfo"
-import { LabeledInfo } from "./components/LabeledInfo"
-import { Main } from "./components/Main"
-import { Page } from "./components/Page"
-import { Side } from "./components/Side"
+import { Page, Main, Side, Content, EventInfo, LabeledInfo, Photo } from "./components";
+import picture from "./assets/img/pic.png";
+import "./components/styles"
 
 function App() {
 
     return (
         <Page title="Alejandro Batres Pedroza">
             <Side>
+                <Photo src={picture} />
                 <Content title="Contacto">
                     <LabeledInfo
                         label="Algo"
-                        info={<b>Locochón</b>}
+                        info="Locochón"
+                    />
+                    <LabeledInfo
+                        label="Algo"
+                        info="Locochón"
                     />
                 </Content>
             </Side>
@@ -23,6 +25,17 @@ function App() {
                 </Content>
                 <Content title="Formación">
                     Velit reprehenderit est pariatur cillum occaecat.
+                </Content>
+                <Content title="Formación">
+                    Velit reprehenderit est pariatur cillum occaecat.
+                </Content>
+                <Content title="Formación">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>58</li>
+                    </ul>
                 </Content>
                 <Content title="Formación">
                     <EventInfo
