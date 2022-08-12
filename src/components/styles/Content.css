@@ -1,0 +1,7 @@
+.content-container h3 {
+    margin-block: 0.5rem;
+}
+
+.content-container + .content-container {
+    margin-top: 2rem;
+}

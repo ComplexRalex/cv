@@ -1,0 +1,26 @@
+.event-container {
+    display: -webkit-flex;
+    display: flex;
+    column-gap: 1em;
+    margin-block: 1em;
+}
+
+.event-container .titles {
+    -webkit-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+}
+
+.event-container .title, .event-container .subtitle {
+    display: block;
+}
+
+.event-container .date {
+    text-align: right;
+}
+
+.event-container .date {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}

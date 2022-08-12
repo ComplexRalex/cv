@@ -1,0 +1,10 @@
+.page-container {
+    display: -webkit-flex;
+    display: flex;
+    column-gap: 3em;
+    margin-block: 1rem;
+}
+
+.page-container h1 {
+    margin-block: 1rem;
+}
