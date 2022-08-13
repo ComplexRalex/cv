@@ -32,8 +32,17 @@ export const data = {
                         type: contentTypes.labeled,
                         data: {
                             label: "LinkedIn",
-                            info: <a href="https://www.linkedin.com/in/alejandro-b-5516a2128/">
+                            info: <a href="https://www.linkedin.com/in/alejandro-b-5516a2128/" target="_blank">
                                 https://www.linkedin.com/in/alejandro-b-5516a2128/
+                            </a>,
+                        },
+                    },
+                    {
+                        type: contentTypes.labeled,
+                        data: {
+                            label: "GitHub",
+                            info: <a href="https://github.com/ComplexRalex" target="_blank">
+                                https://github.com/ComplexRalex
                             </a>,
                         },
                     },
