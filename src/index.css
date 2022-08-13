@@ -1,7 +1,7 @@
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.4rem;
     font-weight: 400;
 
     font-synthesis: none;
@@ -33,6 +33,10 @@ body {
 }
 
 @media print {
+    :root {
+        font-size: 12px;
+    }
+
     body {
         background-color: var(--background-color);
     }

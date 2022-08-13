@@ -3,10 +3,23 @@
     -ms-flex: 1;
     flex: 1;
     background-color: var(--side-color);
+    word-wrap: break-word;
+    max-width: 2.5in;
+}
+
+.side-container section:first-child {
+    padding-top: 0.5rem;
 }
 
 @media screen and (max-width: 6.5in) {
     .side-container {
         margin-bottom: 1.8rem;
+        max-width: 100%;
+    }
+}
+
+@media print {
+    .side-container {
+        max-width: 2in;
     }
 }
