@@ -1,5 +1,5 @@
 import { contentTypes, rateTypes } from "../types/types";
-import picture from "../assets/img/pic2.jpg";
+import picture from "../assets/img/pic1.jpg";
 
 export const data = {
     data: {
