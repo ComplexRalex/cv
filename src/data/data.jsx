@@ -187,7 +187,7 @@ export const data = {
                     {
                         type: contentTypes.paragraph,
                         data: {
-                            text: "Actualmente estudio el noveno semestre de la carrera. He desarrollado software en C, C++, Python, JavaScript, y principalmente en Java, en donde he adquirido mucha experiencia en la construcción de aplicaciones web y de escritorio.",
+                            text: "Actualmente estudio el noveno semestre de la carrera. He desarrollado software en C, C++, Python, Java, y principalmente en JavaScript, en donde he adquirido mucha experiencia en la construcción de aplicaciones web y de escritorio.",
                         },
                     },
                 ]
