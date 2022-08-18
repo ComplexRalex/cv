@@ -126,7 +126,7 @@ export const data = {
                     {
                         type: contentTypes.event,
                         data: {
-                            title: <>Educación Continua (Servicio social) - <i>Desarrollador React</i></>,
+                            title: <>Educación Continua (Servicio social) - <i>Desarrollador Front-end</i></>,
                             subtitle: "Benemérita Universidad Autónoma de Puebla",
                             when: "mayo 2022 - agosto 2022"
                         },
@@ -136,13 +136,13 @@ export const data = {
                         data: {
                             elements: [
                                 {
-                                    title: "Consumo de API",
+                                    title: "Autenticación con JWT",
                                 },
                                 {
-                                    title: "Librería Provider para el manejo del estado",
+                                    title: "Reutilización de componentes con ReactJS",
                                 },
                                 {
-                                    title: "Validador de QR",
+                                    title: "Validaciones de formularios con Yup",
                                 },
                             ]
                         },
@@ -160,13 +160,13 @@ export const data = {
                         data: {
                             elements: [
                                 {
-                                    title: "Autenticación con JWT",
+                                    title: "Consumo de API",
                                 },
                                 {
-                                    title: "Reutilización de componentes",
+                                    title: "Librería Provider para el manejo del estado",
                                 },
                                 {
-                                    title: "Validaciones de formularios con Yup",
+                                    title: "Validador de QR",
                                 },
                             ]
                         },
@@ -200,7 +200,7 @@ export const data = {
                         data: {
                             elements: [
                                 {
-                                    title: "Lenguajes de programación (Java, C, C++, y Python)",
+                                    title: "Lenguajes de programación (Java, C, C++, Python)",
                                     rating: rateTypes.veryGood,
                                 },
                                 {
@@ -212,20 +212,20 @@ export const data = {
                                     rating: rateTypes.veryGood,
                                 },
                                 {
-                                    title: "Desarrollo de aplicaciones móviles (Flutter)",
-                                    rating: rateTypes.good,
+                                    title: "Desarrollo de aplicaciones móviles (Dart, Flutter)",
+                                    rating: rateTypes.normal,
                                 },
                                 {
                                     title: "Estructuras de datos (árboles binarios, listas ligadas)",
-                                    rating: rateTypes.veryGood,
-                                },
-                                {
-                                    title: "Comandos en terminal de distribuciones Linux",
                                     rating: rateTypes.good,
                                 },
                                 {
+                                    title: "Comandos en terminal de distribuciones Linux",
+                                    rating: rateTypes.veryGood,
+                                },
+                                {
                                     title: "Git, GitHub, y GitLab",
-                                    rating: rateTypes.normal,
+                                    rating: rateTypes.good,
                                 },
                             ]
                         },
