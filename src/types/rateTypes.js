@@ -1,10 +1,3 @@
-export const contentTypes = {
-    paragraph: "PARAGRAPH",
-    event: "EVENT",
-    labeled: "LABELED",
-    list: "LIST",
-}
-
 export const rateTypes = {
     useless: 1,
     veryBad: 2,

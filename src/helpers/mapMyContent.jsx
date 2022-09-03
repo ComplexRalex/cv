@@ -1,5 +1,5 @@
 import { Content, EventInfo, LabeledInfo, List, ListItem, Rating } from "../components";
-import { contentTypes } from "../types/types";
+import { contentTypes } from "../types";
 
 export const mapContent = (section) => {
     const { title, contents } = section;
@@ -28,7 +28,7 @@ export const mapContentBody = (content) => {
 const mapToParagraph = (content) => {
     const { text } = content.data;
     return (
-        <p>
+        <p key={text}>
             { text }
         </p>
     );
@@ -39,7 +39,7 @@ const mapToParagraph = (content) => {
 const mapToEventInfo = (content) => {
     const { title, subtitle, when } = content.data;
     return (
-        <EventInfo
+        <EventInfo key={title+subtitle+when}
             title={title}
             subtitle={subtitle}
             when={when}
@@ -60,10 +60,10 @@ const mapToLabeledInfo = (content) => {
 const mapToList = (content) => {
     const { elements = [] } = content.data;
     return (
-        <List>
+        <List key={elements.map(({title, rating}) => `${title}-${rating}`)}>
             {
                 elements.map(({ title, rating }) => (
-                    <ListItem key={title}>
+                    <ListItem key={title+rating}>
                         <span>{ title }</span>
                         {rating && <Rating rate={rating} />}
                     </ListItem>

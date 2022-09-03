@@ -18,9 +18,31 @@ header {
     margin-bottom: 1.8em;
 }
 
+header div {
+    display: flex;
+}
+
 header h1 {
+    flex: 8;
     margin-top: 0rem;
     color: var(--primary-color);
+}
+
+header span.langs {
+    flex: 2;
+    margin-top: 0rem;
+    text-align: right;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+header span.langs a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header span.langs a.active{
+    text-decoration: underline;
 }
 
 header hr {
@@ -35,7 +57,16 @@ header hr {
 }
 
 @media screen and (max-width: 6.5in) {
+    header div {
+        flex-direction: column;
+    }
+
     header h1 {
+        text-align: center;
+        line-height: 1em;
+    }
+
+    header span.langs {
         text-align: center;
     }
 
@@ -43,5 +74,11 @@ header hr {
         display: -webkit-flex;
         display: flex;
         flex-direction: column;
-    }   
+    }
+}
+
+@media print {
+    header span.langs {
+        display: none;
+    }
 }
