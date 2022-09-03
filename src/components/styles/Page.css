@@ -36,12 +36,13 @@ header span.langs {
     font-weight: bolder;
 }
 
-header span.langs a {
+header span.langs span {
     color: var(--secondary-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
-header span.langs a.active{
+header span.langs span.active{
     text-decoration: underline;
 }
 

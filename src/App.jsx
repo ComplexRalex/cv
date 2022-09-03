@@ -1,11 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
-import { AppRouter } from "./routes/AppRouter";
+import { MainPage } from "./pages/MainPage";
+import { LangProvider } from "./providers/LangProvider";
 
 function App() {
     return (
-        <BrowserRouter basename="/cv">
-            <AppRouter />
-        </BrowserRouter>
+        <LangProvider>
+            <MainPage />
+        </LangProvider>
     );
 }
 

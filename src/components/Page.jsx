@@ -1,9 +1,14 @@
-import { NavLink, useLocation } from "react-router-dom"
+import { useLang } from "../hooks/useLang";
+import { langTypes } from "../types";
 import { BoldLine } from "./BoldLine"
 import "./styles"
 
 export const Page = ({ title, children }) => {
-    const { pathname } = useLocation();
+
+    const { lang, setSpanish, setEnglish } = useLang();
+    const isES = langTypes.es === lang;
+    const classEN = !isES ? 'active' : '';
+    const classES = isES ? 'active' : '';
 
     return (
         <>
@@ -13,7 +18,7 @@ export const Page = ({ title, children }) => {
                     <div>
                         <h1>{ title }</h1>
                         <span className="langs">
-                            <NavLink to="/en" className={['/', '/en'].includes(pathname) ? "active" : ""}>EN</NavLink> | <NavLink to="/es">ES</NavLink>
+                            <span onClick={setEnglish} className={classEN}>EN</span> | <span onClick={setSpanish} className={classES}>ES</span>
                         </span>
                     </div>
                     <hr />
