@@ -33,7 +33,7 @@ export const getData = (lang = langTypes.en) => {
                             type: contentTypes.labeled,
                             data: {
                                 label: info["contact-label-email"],
-                                info: "alejandro.batres37@gmail.com",
+                                info: "alejandro.batresp@alumno.buap.mx",
                             },
                         },
                         {
