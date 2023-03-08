@@ -1,7 +1,7 @@
 .side-container {
-    -webkit-flex: 1;
+    /* -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1;
+    flex: 1; */
     background-color: var(--side-color);
     word-wrap: break-word;
     max-width: 2.5in;
@@ -9,6 +9,12 @@
 
 .side-container section:first-child {
     padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 8.5in) {
+    .side-container {
+        max-width: 1.8in;
+    }
 }
 
 @media screen and (max-width: 6.5in) {
@@ -20,6 +26,6 @@
 
 @media print {
     .side-container {
-        max-width: 2in;
+        max-width: 2.1in;
     }
 }

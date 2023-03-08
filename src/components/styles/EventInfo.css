@@ -34,5 +34,6 @@
     
     font-weight: normal;
     font-style: italic;
+    font-size: 0.8rem;
     color: var(--secondary-text-color);
 }

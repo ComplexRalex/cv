@@ -8,7 +8,7 @@ export const getData = (lang = langTypes.en) => {
         return { data: {} };
 
     const { data: { [lang]: info } } = data;
-    
+
     return {
         data: {
             title: "Alejandro Batres Pedroza",
@@ -33,15 +33,17 @@ export const getData = (lang = langTypes.en) => {
                             type: contentTypes.labeled,
                             data: {
                                 label: info["contact-label-email"],
-                                info: "alejandro.batresp@alumno.buap.mx",
+                                info: <span style={{ fontSize: "0.85rem" }}>
+                                    alejandro.batresp@alumno.buap.mx
+                                </span>,
                             },
                         },
                         {
                             type: contentTypes.labeled,
                             data: {
                                 label: "LinkedIn",
-                                info: <a href="https://www.linkedin.com/in/alejandro-b-5516a2128/" target="_blank">
-                                    https://www.linkedin.com/in/alejandro-b-5516a2128/
+                                info: <a href="https://www.linkedin.com/in/ralexba3/" target="_blank">
+                                    linkedin.com/in/ralexba3
                                 </a>,
                             },
                         },
@@ -50,7 +52,7 @@ export const getData = (lang = langTypes.en) => {
                             data: {
                                 label: "GitHub",
                                 info: <a href="https://github.com/ComplexRalex" target="_blank">
-                                    https://github.com/ComplexRalex
+                                    github.com/ComplexRalex
                                 </a>,
                             },
                         },
@@ -209,31 +211,35 @@ export const getData = (lang = langTypes.en) => {
                                 elements: [
                                     {
                                         title: info["knowledge-skills-list-element-langs"],
-                                        rating: rateTypes.veryGood,
+                                        // rating: rateTypes.veryGood,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-basic-web-dev"],
-                                        rating: rateTypes.excellent,
+                                        // rating: rateTypes.excellent,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-js-web-dev"],
-                                        rating: rateTypes.veryGood,
+                                        // rating: rateTypes.veryGood,
+                                    },
+                                    {
+                                        title: info["knowledge-skills-list-element-js-web-ui"],
+                                        // rating: rateTypes.good,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-mobile-dev"],
-                                        rating: rateTypes.normal,
+                                        // rating: rateTypes.normal,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-data-structs"],
-                                        rating: rateTypes.good,
+                                        // rating: rateTypes.good,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-linux-shell"],
-                                        rating: rateTypes.veryGood,
+                                        // rating: rateTypes.veryGood,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-git"],
-                                        rating: rateTypes.good,
+                                        // rating: rateTypes.good,
                                     },
                                 ]
                             },

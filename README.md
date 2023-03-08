@@ -1,3 +1,3 @@
 # Alejandro Batres' Curriculum Vitae
 
-That's it
+Yes, I did a small React application for my CV.
