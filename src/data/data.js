@@ -30,6 +30,11 @@ export const data = {
             "education-paragraph-content": "Actualmente estudio el último semestre de la carrera. He desarrollado software en C, C++, Python, Java, y principalmente en JavaScript, en donde he adquirido mucha experiencia en la construcción de aplicaciones web.",
         
             "experience-title": "Experiencia",
+            "experience-event-pp-title": "Prácticas Profesionales",
+            "experience-event-pp-title-role": "Desarrollador Front-end",
+            "experience-event-pp-subtitle": "SmartKode",
+            "experience-event-pp-when": "enero 2023 - junio 2023*",
+            "experience-event-pp-list-element-1": "Landing page con NextJS y Tailwind",
             "experience-event-ss-title": "Educación Continua (Servicio social)",
             "experience-event-ss-title-role": "Desarrollador Front-end",
             "experience-event-ss-subtitle": "Benemérita Universidad Autónoma de Puebla",
@@ -97,6 +102,11 @@ export const data = {
             "education-paragraph-content": "I am currently studying in the last semester of my degree. I have developed software in C, C++, Python, Java, and mainly JavaScript, where I have obtained a lot of experience in building web applications.",
         
             "experience-title": "Experience",
+            "experience-event-pp-title": "Professional Practices",
+            "experience-event-pp-title-role": "Front-end Developer",
+            "experience-event-pp-subtitle": "SmartKode",
+            "experience-event-pp-when": "January 2023 - June 2023*",
+            "experience-event-pp-list-element-1": "Landing page with NextJS and Tailwind",
             "experience-event-ss-title": "Educación Continua (Social service)",
             "experience-event-ss-title-role": "Front-end Developer",
             "experience-event-ss-subtitle": "Benemérita Universidad Autónoma de Puebla",

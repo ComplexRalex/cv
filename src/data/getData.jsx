@@ -1,5 +1,6 @@
 import { contentTypes, langTypes, rateTypes } from "../types";
-import picture from "../assets/img/pic1.jpg";
+import picture from "../assets/img/pic3.jpg";
+import secret from "../assets/img/secret.gif";
 import { data } from "./data";
 
 export const getData = (lang = langTypes.en) => {
@@ -155,6 +156,24 @@ export const getData = (lang = langTypes.en) => {
                         {
                             type: contentTypes.event,
                             data: {
+                                title: <>{info["experience-event-pp-title"]} - <i>{info["experience-event-pp-title-role"]}</i></>,
+                                subtitle: info["experience-event-pp-subtitle"],
+                                when: info["experience-event-pp-when"]
+                            },
+                        },
+                        {
+                            type: contentTypes.list,
+                            data: {
+                                elements: [
+                                    {
+                                        title: info["experience-event-pp-list-element-1"],
+                                    },
+                                ]
+                            },
+                        },
+                        {
+                            type: contentTypes.event,
+                            data: {
                                 title: <>{info["experience-event-ss-title"]} - <i>{info["experience-event-ss-title-role"]}</i></>,
                                 subtitle: info["experience-event-ss-subtitle"],
                                 when: info["experience-event-ss-when"]
@@ -276,6 +295,11 @@ export const getData = (lang = langTypes.en) => {
                     ]
                 },
             ],
+            secret: {
+                src: secret,
+                title: "Ralex",
+                alt: "Ralex (Easter Egg)",
+            },
         },
     };
 }

@@ -8,5 +8,6 @@ export * from "./ListItem.css";
 export * from "./Main.css";
 export * from "./Page.css";
 export * from "./Photo.css";
+export * from "./PhotoContainer.css";
 export * from "./Rating.css";
 export * from "./Side.css";
