@@ -168,6 +168,9 @@ export const getData = (lang = langTypes.en) => {
                                     {
                                         title: info["experience-event-pp-list-element-1"],
                                     },
+                                    {
+                                        title: info["experience-event-pp-list-element-2"],
+                                    },
                                 ]
                             },
                         },
