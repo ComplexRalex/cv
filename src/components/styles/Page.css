@@ -1,3 +1,12 @@
+.wrap-container {
+    height: 100vh;
+    background-color: var(--outside-background-color);
+}
+
+.root-container {
+    background-color: var(--background-color);
+}
+
 .body-container {
     max-width: 8.5in;
     margin-block: 0rem;
@@ -26,6 +35,13 @@ header h1 {
     flex: 8;
     margin-top: 0rem;
     color: var(--primary-color);
+
+    /* Uhm? */
+    cursor: help;
+}
+
+header.unselectable {
+    user-select: none;
 }
 
 header span.langs {
@@ -81,5 +97,9 @@ header hr {
 @media print {
     header span.langs {
         display: none;
+    }
+    
+    .wrap-container {
+        background-color: var(--background-color);
     }
 }

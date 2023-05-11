@@ -25,19 +25,19 @@
 
 body {
     margin: 0rem;
-    background-color: var(--outside-background-color);
 }
 
-#root {
-    background-color: var(--background-color);
+.ralex {
+    --primary-color: #7c2a2a;
+    --secondary-color: #794c4c;
+    --primary-text-color: #101010;
+    --secondary-text-color: #484848;
+
+    --outside-background-color: var(--primary-color);
 }
 
 @media print {
     :root {
         font-size: 12px;
-    }
-
-    body {
-        background-color: var(--background-color);
     }
 }

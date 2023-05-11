@@ -74,6 +74,9 @@ export const data = {
             "certifications-event-ats-cpp-title": "Aprende Programación en C++ (Básico - Intermedio - Avanzado)",
             "certifications-event-ats-cpp-subtitle": "Udemy",
             "certifications-event-ats-cpp-when": "junio 2019",
+
+            "tooltips-title-normal": "¡Este soy yo!",
+            "tooltips-title-secret": "Espera, ¿quién soy?",
         },
         [langTypes.en]: {
             "contact-title": "Contact",
@@ -147,6 +150,9 @@ export const data = {
             "certifications-event-ats-cpp-title": "Aprende Programación en C++ (Básico - Intermedio - Avanzado)",
             "certifications-event-ats-cpp-subtitle": "Udemy",
             "certifications-event-ats-cpp-when": "June 2019",
+
+            "tooltips-title-normal": "This is me!",
+            "tooltips-title-secret": "Wait, who am I?",
         },
     }
 }

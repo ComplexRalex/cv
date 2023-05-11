@@ -1,10 +1,14 @@
 import { MainPage } from "./pages/MainPage";
-import { LangProvider } from "./providers/LangProvider";
+import { LangProvider, ShowPictureProvider, ShowSecretProvider } from "./providers";
 
 function App() {
     return (
         <LangProvider>
-            <MainPage />
+            <ShowSecretProvider>
+                <ShowPictureProvider>
+                    <MainPage />
+                </ShowPictureProvider>
+            </ShowSecretProvider>
         </LangProvider>
     );
 }

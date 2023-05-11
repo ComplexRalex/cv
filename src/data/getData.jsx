@@ -14,10 +14,16 @@ export const getData = (lang = langTypes.en) => {
         data: {
             title: "Alejandro Batres Pedroza",
             photo: {
-                src: picture,
-                title: "Alejandro Batres",
-                alt: "Alejandro Batres' photo",
-                show: true,
+                normal: {
+                    src: picture,
+                    title: "Alejandro Batres",
+                    alt: "Alejandro Batres' photo",
+                },
+                secret: {
+                    src: secret,
+                    title: "Ralex",
+                    alt: "Ralex (Easter Egg)",
+                }
             },
             side: [
                 {
@@ -298,10 +304,11 @@ export const getData = (lang = langTypes.en) => {
                     ]
                 },
             ],
-            secret: {
-                src: secret,
-                title: "Ralex",
-                alt: "Ralex (Easter Egg)",
+            tooltips: {
+                title: {
+                    normal: info["tooltips-title-normal"],
+                    secret: info["tooltips-title-secret"],
+                },
             },
         },
     };
