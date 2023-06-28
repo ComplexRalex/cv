@@ -1,5 +1,5 @@
 import { contentTypes, langTypes, rateTypes } from "../types";
-import picture from "../assets/img/pic3.jpg";
+import picture from "../assets/img/pic4.jpg";
 import secret from "../assets/img/secret.gif";
 import { data } from "./data";
 
@@ -40,9 +40,9 @@ export const getData = (lang = langTypes.en) => {
                             type: contentTypes.labeled,
                             data: {
                                 label: info["contact-label-email"],
-                                info: <span style={{ fontSize: "0.85rem" }}>
-                                    alejandro.batresp@alumno.buap.mx
-                                </span>,
+                                info: <a href="mailto:ralexba3@gmail.com" target="_blank">
+                                    ralexba3@gmail.com
+                                </a>,
                             },
                         },
                         {
@@ -67,7 +67,9 @@ export const getData = (lang = langTypes.en) => {
                             type: contentTypes.labeled,
                             data: {
                                 label: info["contact-label-phone"],
-                                info: "+52 221 160 1040",
+                                info: <a href="tel:+522211601040" target="_blank">
+                                    +52 221 160 1040
+                                </a>,
                             },
                         },
                         {
@@ -177,6 +179,12 @@ export const getData = (lang = langTypes.en) => {
                                     {
                                         title: info["experience-event-pp-list-element-2"],
                                     },
+                                    {
+                                        title: info["experience-event-pp-list-element-3"],
+                                    },
+                                    {
+                                        title: info["experience-event-pp-list-element-4"],
+                                    },
                                 ]
                             },
                         },
@@ -262,6 +270,14 @@ export const getData = (lang = langTypes.en) => {
                                         // rating: rateTypes.good,
                                     },
                                     {
+                                        title: info["knowledge-skills-list-element-databases"],
+                                        // rating: rateTypes.veryGood,
+                                    },
+                                    {
+                                        title: info["knowledge-skills-list-element-gcloud"],
+                                        // rating: rateTypes.veryGood,
+                                    },
+                                    {
                                         title: info["knowledge-skills-list-element-linux-shell"],
                                         // rating: rateTypes.veryGood,
                                     },
@@ -274,35 +290,35 @@ export const getData = (lang = langTypes.en) => {
                         },
                     ]
                 },
-                {
-                    title: info["certifications-title"],
-                    contents: [
-                        {
-                            type: contentTypes.event,
-                            data: {
-                                title: info["certifications-event-fher-react-title"],
-                                subtitle: info["certifications-event-fher-react-subtitle"],
-                                when: info["certifications-event-fher-react-when"]
-                            },
-                        },
-                        {
-                            type: contentTypes.event,
-                            data: {
-                                title: info["certifications-event-fher-js-title"],
-                                subtitle: info["certifications-event-fher-js-subtitle"],
-                                when: info["certifications-event-fher-js-when"]
-                            },
-                        },
-                        {
-                            type: contentTypes.event,
-                            data: {
-                                title: info["certifications-event-ats-py-title"],
-                                subtitle: info["certifications-event-ats-py-subtitle"],
-                                when: info["certifications-event-ats-py-when"]
-                            },
-                        },
-                    ]
-                },
+                // {
+                //     title: info["certifications-title"],
+                //     contents: [
+                //         {
+                //             type: contentTypes.event,
+                //             data: {
+                //                 title: info["certifications-event-fher-react-title"],
+                //                 subtitle: info["certifications-event-fher-react-subtitle"],
+                //                 when: info["certifications-event-fher-react-when"]
+                //             },
+                //         },
+                //         {
+                //             type: contentTypes.event,
+                //             data: {
+                //                 title: info["certifications-event-fher-js-title"],
+                //                 subtitle: info["certifications-event-fher-js-subtitle"],
+                //                 when: info["certifications-event-fher-js-when"]
+                //             },
+                //         },
+                //         {
+                //             type: contentTypes.event,
+                //             data: {
+                //                 title: info["certifications-event-ats-py-title"],
+                //                 subtitle: info["certifications-event-ats-py-subtitle"],
+                //                 when: info["certifications-event-ats-py-when"]
+                //             },
+                //         },
+                //     ]
+                // },
             ],
             tooltips: {
                 title: {
