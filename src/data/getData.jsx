@@ -140,25 +140,6 @@ export const getData = (lang = langTypes.en) => {
                     ]
                 },
                 {
-                    title: info["education-title"],
-                    contents: [
-                        {
-                            type: contentTypes.event,
-                            data: {
-                                title: info["education-event-college-degree-title"],
-                                subtitle: info["education-event-college-degree-subtitle"],
-                                when: info["education-event-college-degree-when"]
-                            },
-                        },
-                        {
-                            type: contentTypes.paragraph,
-                            data: {
-                                text: info["education-paragraph-content"],
-                            },
-                        },
-                    ]
-                },
-                {
                     title: info["experience-title"],
                     contents: [
                         {
@@ -182,8 +163,26 @@ export const getData = (lang = langTypes.en) => {
                                     {
                                         title: info["experience-event-pp-list-element-3"],
                                     },
+                                ]
+                            },
+                        },
+                        {
+                            type: contentTypes.event,
+                            data: {
+                                title: <>{info["experience-event-school-dashboard-project-title"]} - <i>{info["experience-event-school-dashboard-project-title-role"]}</i></>,
+                                subtitle: info["experience-event-school-dashboard-project-subtitle"],
+                                when: info["experience-event-school-dashboard-project-when"]
+                            },
+                        },
+                        {
+                            type: contentTypes.list,
+                            data: {
+                                elements: [
                                     {
-                                        title: info["experience-event-pp-list-element-4"],
+                                        title: info["experience-event-school-dashboard-project-list-element-1"],
+                                    },
+                                    {
+                                        title: info["experience-event-school-dashboard-project-list-element-2"],
                                     },
                                 ]
                             },
@@ -230,10 +229,26 @@ export const getData = (lang = langTypes.en) => {
                                     {
                                         title: info["experience-event-mobile-apps-project-list-element-2"],
                                     },
-                                    {
-                                        title: info["experience-event-mobile-apps-project-list-element-3"],
-                                    },
                                 ]
+                            },
+                        },
+                    ]
+                },
+                {
+                    title: info["education-title"],
+                    contents: [
+                        {
+                            type: contentTypes.event,
+                            data: {
+                                title: info["education-event-college-degree-title"],
+                                subtitle: info["education-event-college-degree-subtitle"],
+                                when: info["education-event-college-degree-when"]
+                            },
+                        },
+                        {
+                            type: contentTypes.paragraph,
+                            data: {
+                                text: info["education-paragraph-content"],
                             },
                         },
                     ]
@@ -266,16 +281,16 @@ export const getData = (lang = langTypes.en) => {
                                         // rating: rateTypes.normal,
                                     },
                                     {
-                                        title: info["knowledge-skills-list-element-data-structs"],
-                                        // rating: rateTypes.good,
-                                    },
-                                    {
                                         title: info["knowledge-skills-list-element-databases"],
                                         // rating: rateTypes.veryGood,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-gcloud"],
                                         // rating: rateTypes.veryGood,
+                                    },
+                                    {
+                                        title: info["knowledge-skills-list-element-data-structs"],
+                                        // rating: rateTypes.good,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-linux-shell"],

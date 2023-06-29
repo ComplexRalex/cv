@@ -1,5 +1,10 @@
 import "./styles"
 
+// A workaround, yey!
+const splitDates = (date = "") => {
+    return date.split('-').map(date => date.trim());
+}
+
 export const EventInfo = ({ title, subtitle, when }) => {
     return (
         <div className="event-container">
@@ -11,9 +16,15 @@ export const EventInfo = ({ title, subtitle, when }) => {
                     { subtitle }
                 </span>
             </div>
-            <span className="date">
-                { when }
-            </span>
+            <div className="dates">
+                {
+                    splitDates(when).map(date => (
+                        <span className="date" key={date}>
+                            { date }
+                        </span>
+                    ))
+                }
+            </div>
         </div>
     )
 }

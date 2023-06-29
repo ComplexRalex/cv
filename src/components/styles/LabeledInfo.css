@@ -1,4 +1,4 @@
-.labeled-container{
+.labeled-container {
     margin-block: 1rem;
 }
 
@@ -6,12 +6,16 @@
     display: block;
 }
 
-.labeled-container .label{
+.labeled-container .label {
     font-weight: bold;
     color: var(--primary-text-color);
 }
 
-.labeled-container .info{
+.labeled-container .info {
     font-weight: normal;
+    color: var(--primary-text-color);
+}
+
+.labeled-container .info a {
     color: var(--primary-text-color);
 }
