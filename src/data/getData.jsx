@@ -145,6 +145,27 @@ export const getData = (lang = langTypes.en) => {
                         {
                             type: contentTypes.event,
                             data: {
+                                title: <>{info["experience-event-sk-title"]} - <i>{info["experience-event-sk-title-role"]}</i></>,
+                                subtitle: info["experience-event-sk-subtitle"],
+                                when: info["experience-event-sk-when"]
+                            },
+                        },
+                        {
+                            type: contentTypes.list,
+                            data: {
+                                elements: [
+                                    {
+                                        title: info["experience-event-sk-list-element-1"],
+                                    },
+                                    {
+                                        title: info["experience-event-sk-list-element-2"],
+                                    },
+                                ]
+                            },
+                        },
+                        {
+                            type: contentTypes.event,
+                            data: {
                                 title: <>{info["experience-event-pp-title"]} - <i>{info["experience-event-pp-title-role"]}</i></>,
                                 subtitle: info["experience-event-pp-subtitle"],
                                 when: info["experience-event-pp-when"]
@@ -159,9 +180,6 @@ export const getData = (lang = langTypes.en) => {
                                     },
                                     {
                                         title: info["experience-event-pp-list-element-2"],
-                                    },
-                                    {
-                                        title: info["experience-event-pp-list-element-3"],
                                     },
                                 ]
                             },
@@ -202,12 +220,6 @@ export const getData = (lang = langTypes.en) => {
                                     {
                                         title: info["experience-event-ss-list-element-1"],
                                     },
-                                    {
-                                        title: info["experience-event-ss-list-element-2"],
-                                    },
-                                    {
-                                        title: info["experience-event-ss-list-element-3"],
-                                    },
                                 ]
                             },
                         },
@@ -219,19 +231,19 @@ export const getData = (lang = langTypes.en) => {
                                 when: info["experience-event-mobile-apps-project-when"]
                             },
                         },
-                        {
-                            type: contentTypes.list,
-                            data: {
-                                elements: [
-                                    {
-                                        title: info["experience-event-mobile-apps-project-list-element-1"],
-                                    },
-                                    {
-                                        title: info["experience-event-mobile-apps-project-list-element-2"],
-                                    },
-                                ]
-                            },
-                        },
+                        // {
+                        //     type: contentTypes.list,
+                        //     data: {
+                        //         elements: [
+                        //             {
+                        //                 title: info["experience-event-mobile-apps-project-list-element-1"],
+                        //             },
+                        //             {
+                        //                 title: info["experience-event-mobile-apps-project-list-element-2"],
+                        //             },
+                        //         ]
+                        //     },
+                        // },
                     ]
                 },
                 {
@@ -277,6 +289,10 @@ export const getData = (lang = langTypes.en) => {
                                         // rating: rateTypes.good,
                                     },
                                     {
+                                        title: info["knowledge-skills-list-element-java-dev"],
+                                        // rating: rateTypes.normal,
+                                    },
+                                    {
                                         title: info["knowledge-skills-list-element-mobile-dev"],
                                         // rating: rateTypes.normal,
                                     },
@@ -287,6 +303,10 @@ export const getData = (lang = langTypes.en) => {
                                     {
                                         title: info["knowledge-skills-list-element-gcloud"],
                                         // rating: rateTypes.veryGood,
+                                    },
+                                    {
+                                        title: info["knowledge-skills-list-element-oci"],
+                                        // rating: rateTypes.normal,
                                     },
                                     {
                                         title: info["knowledge-skills-list-element-data-structs"],
