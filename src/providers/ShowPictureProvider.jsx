@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-const initialState = true;
+const initialState = false;
 
 export const ShowPictureContext = createContext(initialState);
 
